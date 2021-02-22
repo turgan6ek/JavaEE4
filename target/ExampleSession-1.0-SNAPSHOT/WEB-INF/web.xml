@@ -33,4 +33,68 @@
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/LogoutServlet</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>s1</servlet-name>
+        <servlet-class>HiddenForm.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>s2</servlet-name>
+        <servlet-class>HiddenForm.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>s2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>url1</servlet-name>
+        <servlet-class>UrlRevriting.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>url1</servlet-name>
+        <url-pattern>/urlservlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>url2</servlet-name>
+        <servlet-class>UrlRevriting.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>url2</servlet-name>
+        <url-pattern>/urlservlet2</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>session1</servlet-name>
+        <servlet-class>SessionInterface.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>session1</servlet-name>
+        <url-pattern>/session1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>session2</servlet-name>
+        <servlet-class>SessionInterface.SecondServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>session2</servlet-name>
+        <url-pattern>/session2</url-pattern>
+    </servlet-mapping>
+
 </web-app>

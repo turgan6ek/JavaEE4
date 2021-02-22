@@ -16,9 +16,11 @@ public class LogoutServlet extends HttpServlet {
         request.getRequestDispatcher("link.html").include(request, response);
 
         Cookie ck=new Cookie("name","");
+        Cookie ck1=new Cookie("JSESSIONID","");
         ck.setMaxAge(0);
+        ck1.setMaxAge(0);
         response.addCookie(ck);
-
+        response.addCookie(ck1);
         out.print("you are successfully logged out!");
     }
 }
